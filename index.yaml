@@ -36,7 +36,7 @@ entries:
     - https://n8n.io/
     type: application
     urls:
-    - https://james-satsss.github.io/n8n-helm/n8n-0.20.1.tgz
+    - https://cdekkort.github.io/n8n-helm/n8n-0.20.1.tgz
     version: 0.20.1
   redis:
   - annotations:
@@ -69,6 +69,6 @@ entries:
     sources:
     - https://github.com/bitnami/containers/tree/main/bitnami/redis
     urls:
-    - https://james-satsss.github.io/n8n-helm/charts/redis-17.2.0.tgz
+    - https://cdekkort.github.io/n8n-helm/charts/redis-17.2.0.tgz
     version: 17.2.0
 generated: "2024-01-22T16:21:16.2750037+01:00"
