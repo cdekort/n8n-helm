@@ -1,0 +1,86 @@
+apiVersion: v1
+entries:
+  n8n:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: "Updated application to version 1.62.5"
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: 1.62.5
+    created: "2024-10-18T12:11:19.41227623+02:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.6.1
+    description: A Kubernetes Helm chart for n8n a free and open fair-code licensed
+      node based Workflow Automation Tool. Easily automate tasks across different
+      services.
+    digest: 02d8dabc9a9c90b22f4cda5e35193fc3b8382214d59dc7165575d141d0108f47
+    home: https://github.com/8gears/n8n-helm-chart
+    icon: https://avatars1.githubusercontent.com/u/45487711?s=200&v=4
+    keywords:
+    - Workflow Automation
+    - Workflow
+    - iPaaS
+    - integration-framework
+    - low-code-plattform
+    - low-code
+    maintainers:
+    - email: contact@8gears.com
+      name: 8gears
+      url: https://github.com/8gears
+    - email: _@8gears.com
+      name: n8n
+      url: https://github.com/n8n-io
+    name: n8n
+    sources:
+    - https://github.com/n8n-io/n8n
+    - https://n8n.io/
+    type: application
+    urls:
+    - n8n-0.25.2.tgz
+    version: 0.25.2
+  redis:
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r92
+        - name: redis-exporter
+          image: docker.io/bitnami/redis-exporter:1.55.0-debian-11-r3
+        - name: redis-sentinel
+          image: docker.io/bitnami/redis-sentinel:7.2.3-debian-11-r2
+        - name: redis
+          image: docker.io/bitnami/redis:7.2.3-debian-11-r2
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.2.3
+    created: "2024-10-18T12:11:19.415679227+02:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 7069129ea36d50ec9c6b494aa4d7e85395f443e36c4ba8765506776dcae03f3a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis
+    urls:
+    - charts/redis-18.6.1.tgz
+    version: 18.6.1
+generated: "2024-10-18T12:11:19.40654222+02:00"
